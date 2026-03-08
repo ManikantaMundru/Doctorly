@@ -89,3 +89,17 @@ dotnet ef database update --project Doctorly.Calendar.Infrastructure --startup-p
  
 # Run the API 
 dotnet run --project Doctorly.Calendar.Api
+
+## Auto-Generated Client
+Install the NSwag CLI tool once globally:
+dotnet tool install -g NSwag.ConsoleCore
+
+### Generating the Client
+Run the api project
+dotnet run --project src/DoctorScheduler.API
+
+Run the generate-client.ps1 script from root folder
+
+The generated file will appear at:
+
+client/DoctorScheduler.Client/Generated/DoctorSchedulerClient.cs

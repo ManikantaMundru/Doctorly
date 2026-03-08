@@ -1,0 +1,6 @@
+@Doctorly.Calendar.Api_HostAddress = http://localhost:5265
+
+GET {{Doctorly.Calendar.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
